@@ -84,7 +84,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
-  pg (~> 0.18)
+  pg
   pry
   puma
   rails_12factor
