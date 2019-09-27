@@ -6,6 +6,22 @@
     <link rel="stylesheet" href="/stylesheets/lib.css">
     <link rel="stylesheet" href="/stylesheets/app.css">
     <title>Finstagram</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#photo_url").on("input", function(event) {
+                var photo_url = $(this).val();
+
+                var preview = $("#preview");
+                if (photo_url) {
+                    preview.attr("src", photo_url)
+                    preview.show();
+                } else {
+                    preview.hide();
+                }
+            });
+        });
+    </script>
   </head>
   <body>
     <header>
