@@ -19,5 +19,5 @@ end
 
 group :production do 
   gem 'rails_12factor'
-  gem 'pg', '~> 0.9'
+#  gem 'pg', '~> 0.9'
 end
